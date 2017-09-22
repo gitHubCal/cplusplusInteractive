@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Linked-List</title>
+    <link rel="stylesheet" type="text/css" href="../styles/double_linked_list.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <h1>Core Functions Of The C++ Double Linked-List Class</h1>
+    </header>
+    <div class="function-container"> 
+        <div class="create-div">
+            <p class="create">Generate List: </p>
+            <textarea class="create-text"></textarea>
+            <button class="create-btn">Create!</button>
+            <img data-tooltip="Enter a number value into the text field, and a list of that size will be generated." class="question-hover" src="../images/questionMark.png"/>
+        </div>
+        
+        <div class="front-div left">
+            <p class="front">front&#40;&#41;</p>
+            <button class="front-btn">Front!</button>
+            <img data-tooltip="front() is a function that returns a direct reference to the first element in the list container." class="question-hover" src="../images/questionMark.png"/>
+        </div>
+        
+        <div class="back-div left">
+            <p class="back">back&#40;&#41;</p>
+            <button class="back-btn">Back!</button>
+            <img data-tooltip="back() is a function that returns a direct reference to the last element in the list container." class="question-hover" src="../images/questionMark.png"/>
+        </div>
+        
+        <!--Fill-->
+        <div class="assign-div left">
+            <p class="assign">assign&#40;&#41;</p>
+            <textarea class="assign-size"></textarea>
+            <p class="assign-c">,</p>
+            <textarea class="assign-val"></textarea>
+            <button class="assign-btn">Assign!</button>
+            <img data-tooltip="assign() is a function that assigns new contents to the list container, replacing its current contents, and modifying its size accordingly. In the 'fill' version of assign, the first parameter is the number of elements to be created. The second parameter is the element to be copied and placed in the list. " class="question-hover" src="../images/questionMark.png"/>
+        </div>
+        
+        <div class="empty-div left">
+            <p class="empty">empty&#40;&#41;</p>
+            <button class="empty-btn">Empty?</button>
+            <img data-tooltip="empty() is a function that Returns a bool value indicating whether the list is empty (size is 0)." class="question-hover" src="../images/questionMark.png"/>
+        </div>
+        
+        <div class="reverse-div left">
+            <p class="reverse">reverse&#40;&#41;</p>
+            <button class="reverse-btn">Reverse!</button>
+            <img data-tooltip="reverse() is a function that reverses the order of the elements in the forward list." class="question-hover" src="../images/questionMark.png"/>
+        </div>
+        
+        <div class="sort-div left">
+            <p class="sort">sort&#40;&#41;</p>
+            <textarea class="sort-text"></textarea>
+            <button class="sort-btn">Sort!</button>
+            <img data-tooltip="sort() is a function that sorts the elements in the list, changing their position within the container if necessary. With no parameters, the sort function orders the elements in ascending order. Sort can also take one parameter- a predidcate that returns a bool. The predicate takes two parameters and is an adapter written by the programmer to compare to objects anyway they see fit. A standard library includes the 'greater' predicate, which will order the elements in descending order. " class="question-hover" src="../images/questionMark.png"/>
+        </div>
+        
+        <div class="unique-div left">
+            <p class="unique">unique&#40;&#41;</p>
+            <button class="unique-btn">Unique!</button>
+            <img data-tooltip="unique() is a function that removes all the elements removes all but the first duplicate elements from the list." class="question-hover" src="../images/questionMark.png"/>
+        </div>
+    </div>
+    
+    <div class="container-container">
+        <ul class="list-info">
+            <li class="list-name">list&lt;int&gt; d_Linked_list</li>
+            <li class="list-size"><p class="list-size">List Size: </p><p class="list-size-p">  </p> </li>
+        </ul>
+        <!--Linked-List Goes here-->
+        <div class="output-div active-inlineB">
+            <p class="output-text">Output</p>
+            <p class="output"></p>
+        </div>
+        <div class="return-div active-inlineB">
+            <p class="return-text">Return</p>
+            <p class="return"></p>
+        </div>
+    </div>
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/double_linked_list.js"></script>
+    <script src="../scripts/tooltips.js"></script>
+</body>
+</html>
